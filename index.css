@@ -1,0 +1,179 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	opacity: 0.9;
+	background-color: black;
+	font-size: 22px;
+	font-family: "Helvetica";
+	color: seashell;
+	text-align: center;
+}
+/*************header***********/
+.head-container {
+	border-bottom: 1px solid seashell;
+	height: 69px;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	align-items: center;
+}
+/*logo*/
+img {
+	height: 50px;
+	margin-left: 10px;
+}
+/*navbar*/
+nav {
+	text-align: right;
+	flex-grow: 1;
+}
+nav ul {
+	display: inline-flex;
+	text-align: right;
+	align-content: space-around;
+	padding: 20px 10px;
+}
+nav li {
+	padding: 20px 10px;
+	text-decoration: underline;
+	align-content: space-around;
+	list-style: none;
+}
+nav a {
+	color: seashell;
+}
+/**************main*********/
+
+main {
+	padding-top: 70px;
+	margin: 0;
+}
+/*section-mission*/
+.mission {
+	padding-top: 70px;
+	background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+	width: 1200px;
+	min-height: 700px;
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.our-mission {
+	background-color: black;
+	justify-content: center;
+	margin-top: 16%;
+}
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 10px;
+}
+/*section-featured*/
+.featured-tea {
+	width: 1000px;
+	min-height: 700px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.featured-description {
+	display: block;
+}
+.featured-images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+figure {
+	display: inline-block;
+}
+.featured-tea img {
+	padding-top: 10px;
+	height: 200px;
+	width: 300px;
+	margin: 0;
+	padding: 10px 0px;
+
+	display: block;
+}
+span {
+	display: block;
+}
+/*locations*/
+.location {
+	height: 500px;
+	margin: 0 auto;
+	background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 70px;
+}
+.location-header {
+	display: block;
+	padding-top: 70px;
+	margin-top: 70px;
+	text-align: center;
+}
+article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+
+	justify-content: center;
+}
+article p {
+	text-align: center;
+	line-height: 2.5;
+}
+.downtown {
+	background-color: black;
+	width: 300px;
+	margin-right: 40px;
+	margin-left: 80px;
+	height: 280px;
+}
+.bayside {
+	background-color: black;
+	width: 300px;
+	margin-right: 40px;
+	height: 280px;
+}
+.oakdale {
+	background-color: black;
+	width: 300px;
+	height: 280px;
+	margin-right: 80px;
+}
+@media only screen and (max-width: 900px) {
+	article p {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.bayside {
+		font-size: 12px;
+		line-height: 1;
+	}
+}
+.contact {
+	height: 200px;
+}
+footer {
+	text-align: left;
+}
+footer p {
+	margin-right: 20px;
+}
